@@ -2,6 +2,14 @@
 
 There are many ways to use this program.
 
+## As a Bot - RECOMMENDED
+
+### Claude Code
+
+Get [Claude Code](https://code.claude.com/docs/en/overview) and login, then launch it.
+
+It will use `.skills/` directory from the root. That's it.
+
 ## As a Standalone Package
 
 Run straight from [uv](https://docs.astral.sh/uv/):
@@ -42,14 +50,6 @@ http GET :8000/performance/HUL            # Hulkenberg best
 http POST :8000/performance/HU/upgrade/5  # Hulkenberg 5% perf increase
 http DELETE :8000/performance             # Reset
 ```
-
-## As a Bot
-
-### Claude Code
-
-Get [Claude Code](https://code.claude.com/docs/en/overview) and login, then launch it.
-
-It will use `.skills/` directory from the root. That's it.
 
 ### All-in-one Py Bot
 

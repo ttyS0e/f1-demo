@@ -6,13 +6,15 @@ description: |
 
 ## BEFORE
 
-Launch the analysis program with:
+Launch the analysis program by starting the compose stack in the background (run from the repository root):
 
-`uv run uvicorn api:app --reload`
+`docker compose up -d --build`
 
 ## AFTER
 
-Close it with SIGKILL
+Kill the compose stack:
+
+`docker compose kill`
 
 ## Instructions
 
