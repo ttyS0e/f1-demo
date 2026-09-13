@@ -1,2 +1,6 @@
 ux/bin
 ux/obj
+
+.pytest_cache/
+.venv/
+__pycache__/
