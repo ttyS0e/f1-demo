@@ -1,4 +1,4 @@
-import os, requests, pandas
+import io, os, requests, pandas
 from pathlib import Path
 home = Path.home()
 
@@ -28,8 +28,11 @@ class stats:
 
     return file
 
-  def load_stats_frame(self):
-    self.stats_frame = pandas.read_json(self.download_stats_json())
+  def load_stats_frame(self, json_data=None):
+    if json_data is not None:
+      self.stats_frame = pandas.read_json(io.StringIO(json_data))
+    else:
+      self.stats_frame = pandas.read_json(self.download_stats_json())
 
     # 'time' holds per-lap time in seconds, but uses the literal string "None" instead of null
     self.stats_frame["time"] = pandas.to_numeric(self.stats_frame["time"], errors="coerce")
@@ -123,5 +126,5 @@ class stats:
 
     return fastest
 
-  def __init__(self):
-    self.load_stats_frame()
+  def __init__(self, json_data=None):
+    self.load_stats_frame(json_data)
