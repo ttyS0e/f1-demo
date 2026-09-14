@@ -14,6 +14,7 @@ class stats:
         # `return` just causes uv to loop, not sure why...
         None
 
+      # USE SUBJECT TO LICENSE AS DESCRIBED: https://github.com/TracingInsights/RaceData/blob/main/LICENSE
       req = requests.get("https://raw.githubusercontent.com/TracingInsights/2026/refs/heads/main/Australian%20Grand%20Prix/Qualifying/session_laptimes.json")
 
       file = open(home / ".f1" / "stats.json", "w")

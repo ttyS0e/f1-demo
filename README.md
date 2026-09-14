@@ -1,3 +1,7 @@
+# LICENSE
+
+USE SUBJECT TO AND AGREEMENT WITH THE LICENSE AS DESCRIBED IN THE DATASET: https://github.com/TracingInsights/RaceData/blob/main/LICENSE
+
 # Test Me
 
 [Install uv](https://docs.astral.sh/uv/getting-started/installation/), and then:
