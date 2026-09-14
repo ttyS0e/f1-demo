@@ -20,7 +20,7 @@ Kill the compose stack:
 
 You have two rest APIs available:
 
-### API 1: Get current driver performance
+### API 1: Get current driver performance
 
 Send a GET to: `http://127.0.0.1:8000/performance`
 or for one driver: `http://127.0.0.1:8000/performance/{driver}`
